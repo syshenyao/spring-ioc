@@ -17,7 +17,7 @@ public class IocApplication {
         User user1 = (User) beanFactory.getBeanByName("myspring.domain.User");
         User user2 = (User) beanFactory.getBeanByName("myspring.domain.User");
         Student student1 = user1.getStudent();
-        Student student2 = user1.getStudent();
+        Student student2 = user2.getStudent();
         Student student3 = (Student) beanFactory.getBeanByName("myspring.domain.Student");
         System.out.println(user1);
         System.out.println(user2);
